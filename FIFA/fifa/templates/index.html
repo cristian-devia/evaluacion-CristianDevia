@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Mundial FIFA 2026</title>
+    <style>
+        /* styles.css */
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos específicos */
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .titulo-bienvenida {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .titulo-bienvenida1 {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .titulo-bienvenida2 {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-bienvenida">Bienvenido al Mundial FIFA 2026</h1>
+        <nav>
+            <ul>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="estadios.html">Estadios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="titulo-bienvenida1">La FIFA y el Mundial 2026</h2>
+            <p>La FIFA organiza uno de los mayores eventos deportivos: la Copa Mundial de la FIFA. En el 2026, el torneo
+                se llevará a cabo en México, Estados Unidos y Canadá. Uniendo tres países, esta será una celebración del
+                fútbol que reunirá a equipos de todo el mundo.</p>
+        </section>
+
+        <section>
+            <h2 class="titulo-bienvenida2">Lugares del Mundial 2026</h2>
+            <p>El torneo se desarrollará en varios estadios emocionantes y diversos en los tres países anfitriones. Aquí
+                se jugarán algunos de los encuentros más importantes del fútbol mundial.</p>
+            <!-- Puedes agregar una lista de estadios aquí -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 FIFA. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
