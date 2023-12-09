@@ -9,6 +9,7 @@ from .models import Team,Player, PlayingPosition, Coach
 @admin.register(Team)
 class TeamAdmin(admin.ModelAdmin):
     list_display = ('name','flag_image','shield_image',)
+    
 
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):

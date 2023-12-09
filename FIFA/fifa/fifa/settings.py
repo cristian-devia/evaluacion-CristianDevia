@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 MEDIA_URL = '/player/'
-MEDIA_ROOT = BASE_DIR / "player"
+MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'player')
 
 

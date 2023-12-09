@@ -12,6 +12,9 @@ class Team(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def show_photo(self):
+        return format_html('<img src={} width="70" /> ', self.photo.url)
 
     class Meta:
         verbose_name = "Equipo"
@@ -28,13 +31,15 @@ class Player(models.Model):
     number = models.IntegerField(verbose_name="Número de camiseta")
     is_starting = models.BooleanField(verbose_name="¿Es titular?")
     team = models.ForeignKey(Team, on_delete=models.CASCADE, verbose_name="Equipo")
-    photo = models.ImageField(upload_to='player', null=True, blank=True)
+    photo = models.ImageField(upload_to='player/', null=True, blank=True)
 
     def __str__(self):
         return f"{self.name} {self.last_name}"
 
     def show_photo(self):
-        return format_html('<img src={} width="70" /> ', self.photo.url)
+        if self.photo:
+            return format_html('<img src="{}" width="70" />', self.photo.url)
+        return "No photo"
 
     class Meta:
         verbose_name = "Jugador"
